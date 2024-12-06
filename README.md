@@ -1,5 +1,5 @@
 ## X Vending Machine
-* Preview: 
+* Preview: https://youtu.be/Mah2dBfITUY
 
 * Support: https://discord.gg/N74Yuq9ARQ
 
