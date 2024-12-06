@@ -1,4 +1,4 @@
-## X Vanding Mashine
+## X Vending Machine
 * Preview: 
 
 * Support: https://discord.gg/N74Yuq9ARQ
