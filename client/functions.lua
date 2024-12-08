@@ -1,4 +1,9 @@
-ESX = exports['es_extended']:getSharedObject()
+if Config.FrameWork == "esx" then
+    ESX = exports["es_extended"]:getSharedObject()
+elseif Config.FrameWork == "qb" then
+    QBCore = exports['qb-core']:GetCoreObject()
+end
+
 
 function xNotify(msg)
     if Config.Notification == "esx" then

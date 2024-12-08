@@ -32,21 +32,6 @@ Config.VendingProps = {
 }
 
 Config.Strings = {
-    ["snacks"] = {
-        ["label"] = "Use snacks vending",     -- Label on target
-        ["icon"] = "fa-solid fa-cookie-bite", -- Icon on target | You can find all icons here ["https://fontawesome.com/v6/icons/"]
-        ["contextTitle"] = "Snacks Vending",  -- Context menu title | Only for ox_lib context
-    },
-    ["drinks"] = {
-        ["label"] = "Use drinks vending",
-        ["icon"] = "fa-solid fa-wine-bottle",
-        ["contextTitle"] = "Drinks Vending",
-    },
-    ["coffe"] = {
-        ["label"] = "Use coffe vending",
-        ["icon"] = "fa-solid fa-mug-hot",
-        ["contextTitle"] = "Coffe Vending",
-    },
     ["machine"] = {
         ["bought"] = "You succesfuly bought from vanding machine",
         ["noMoney"] = "You dont have enough money",
@@ -55,34 +40,49 @@ Config.Strings = {
 
 Config.VendingMachines = {
     ["snacks"] = {
-        ["snickers"] = {                        -- Inventory item name
-            label = "Snickers",                 -- Label on context
-            icon = "fa-solid fa-cookie-bite",   -- Icon on context | You can find all icons here ["https://fontawesome.com/v6/icons/"]
-            price = 15,                         -- Price
-        },
-        ["oreo"] = {
-        label = "Oreo",
-        icon = "fa-solid fa-cookie-bite",
-        price = 15,
-    },
+        ["label"] = "Use snacks vending",           -- Label on target
+        ["icon"] = "fa-solid fa-cookie-bite",       -- Icon on target | You can find all icons here ["https://fontawesome.com/v6/icons/"]
+        ["contextTitle"] = "Snacks Vending",        -- Context menu title | Only for ox_lib context
+        ["itemList"] = {
+            ["snickers"] = {                        -- Inventory item name
+                label = "Snickers",                 -- Label on context
+                icon = "fa-solid fa-cookie-bite",   -- Icon on context | You can find all icons here ["https://fontawesome.com/v6/icons/"]
+                price = 15,                         -- Price
+            },
+            ["oreo"] = {
+                label = "Oreo",
+                icon = "fa-solid fa-cookie-bite",
+                price = 15,
+            },
+        }
     },
     ["drinks"] = {
-        ["cola"] = {     
-            label = "Coca Cola",
-            icon = "fa-solid fa-wine-bottle",
-            price = 10,
-        },
+        ["label"] = "Use drinks vending",
+        ["icon"] = "fa-solid fa-wine-bottle",
+        ["contextTitle"] = "Drinks Vending",
+        ["itemList"] = {
+            ["cola"] = {     
+                label = "Coca Cola",
+                icon = "fa-solid fa-wine-bottle",
+                price = 10,
+            },
+        }
     },
     ["coffe"] = {
-        ["nesscaffe"] = {
-            label = "Nesscaffe",
-            icon = "fa-solid fa-mug-hot",
-            price = 5,
-        },
-        ["hotchocolate"] = {
-            label = "Hot  chocolate",
-            icon = "fa-solid fa-mug-hot",
-            price = 3,
-        },
+        ["label"] = "Use coffe vending",
+        ["icon"] = "fa-solid fa-mug-hot",
+        ["contextTitle"] = "Coffe Vending",
+        ["itemList"] = {
+            ["nesscaffe"] = {
+                label = "Nesscaffe",
+                icon = "fa-solid fa-mug-hot",
+                price = 5,
+            },
+            ["hotchocolate"] = {
+                label = "Hot  chocolate",
+                icon = "fa-solid fa-mug-hot",
+                price = 3,
+            },
+        }
     }
 }
